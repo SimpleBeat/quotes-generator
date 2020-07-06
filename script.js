@@ -2,7 +2,7 @@ const quoteContainer = document.getElementById('quote-container')
 const quoteText = document.getElementById('quote')
 const authorText = document.getElementById('author')
 const twitterBtn = document.getElementById('twitter')
-//const quoteBtn = document.getElementById('new-quote')
+const quoteBtn = document.getElementById('new-quote')
 const loader = document.getElementById('loader')
 
 function showLoadingSpinner() {
@@ -56,7 +56,7 @@ function tweetQuote() {
 }
 
 // Event Listeners
-//quoteBtn.addEventListener('click', getQuote)
+quoteBtn.addEventListener('click', getQuote)
 twitterBtn.addEventListener('click', tweetQuote)
 
 // On Load
